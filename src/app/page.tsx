@@ -1,10 +1,15 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
+import Keyboard from "./components/Keyboard";
+const inter = Inter({ subsets: ["latin"] });
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
-  return (
-    <h2>Hello</h2>
-  )
+	return (
+		<div className="flex justify-center">
+			<div className="">
+				<Keyboard />
+			</div>
+		</div>
+	);
 }
