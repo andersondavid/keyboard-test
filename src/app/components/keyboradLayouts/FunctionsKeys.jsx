@@ -3,7 +3,7 @@ import Key from "../subcomponents/Key";
 
 export default function FunctionsKeys() {
 	return (
-		<div>
+		<div className="inline-block">
 			<Key keyValue="ESC" />
 			<Key keyValue="null" className="opacity-0" />
 			<Key keyValue="F1" />
