@@ -1,18 +1,31 @@
 import React from "react";
 import FunctionsKeys from "./keyboradLayouts/FunctionsKeys";
 import ModifiersTypewriterKeys from "./keyboradLayouts/ModifiersTypewriterKeys";
-import ArrowsNavigations from "./keyboradLayouts/ArrowsNavigations";
+import ArrowsNavigations from "./keyboradLayouts/ArrowsNavigationsKeys";
+import Numpad from "./keyboradLayouts/NumpadKeys";
+import EspecialKeys from "./keyboradLayouts/EspecialKeys";
+import NumpadKeys from "./keyboradLayouts/NumpadKeys";
 export default function Keyboard() {
 	return (
-		<div className="grid grid-flow-col gap-x-2">
-			<div className="col-span-2">
-				<FunctionsKeys />
+		<div className="flex gap-4">
+			<div>
+				<div className="mb-4">
+					<FunctionsKeys />
+				</div>
+				<div>
+					<ModifiersTypewriterKeys />
+				</div>
 			</div>
-			<div className="col-span-2">
-				<ModifiersTypewriterKeys />
+			<div>
+				<div className="mb-4">
+					<EspecialKeys />
+				</div>
+				<div className="self-end">
+					<ArrowsNavigations />
+				</div>
 			</div>
-			<div className="row-span-2">
-				<ArrowsNavigations />
+			<div>
+				<NumpadKeys />
 			</div>
 		</div>
 	);
