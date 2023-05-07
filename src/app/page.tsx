@@ -1,9 +1,4 @@
-import { Inter } from "next/font/google";
-import Keyboard from "./components/Keyboard";
-const inter = Inter({ subsets: ["latin"] });
-
-
-
+import Keyboard from "./components/Keyboard"	
 export default function Home() {
 	return (
 		<div className="flex justify-center">
