@@ -57,11 +57,30 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
- 
+
 .font-goldman {
 	font-family: "Goldman", cursive;
 }
 
 .font-roboto {
 	font-family: "Roboto", sans-serif;
+}
+
+.pressing {
+	--tw-bg-opacity: 1;
+	background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+.pressed {
+	--tw-bg-opacity: 1;
+	background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.pressing > .enter {
+	--tw-bg-opacity: 1;
+	background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.pressed > .enter {
+	--tw-bg-opacity: 1;
+	background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
